@@ -4,6 +4,14 @@ This project automates the flow of **daily sales data** from Gmail → Postgres 
 
 It demonstrates how **automation + cloud databases + AI analytics** can solve real-world supply chain problems (like order fill rates and SLA tracking) with minimal manual effort.
 
+<img width="1904" height="903" alt="image" src="https://github.com/user-attachments/assets/bc32a191-29a3-4990-8fdc-0d56e6ed2706" />
+<img width="1910" height="921" alt="image" src="https://github.com/user-attachments/assets/bcfad116-119b-470f-b3d3-ff946af26e07" />
+<img width="1912" height="910" alt="image" src="https://github.com/user-attachments/assets/d34a82dd-9cf6-4150-9219-e648435ade98" />
+
+
+For Detailed Instructions follow the uploaded manuals
+
+Summary Below
 ---
 
 ## 🚀 Tech Stack
@@ -27,7 +35,8 @@ n8n
 n8n starts at: `http://localhost:5678`  
 Create an account and open the UI.  
 
-📸 *[Insert screenshot of n8n running + UI here]*  
+<img width="805" height="246" alt="image" src="https://github.com/user-attachments/assets/85eb3614-8757-43ad-b7ce-eb69b42b5262" />
+
 
 ---
 
@@ -41,8 +50,6 @@ Create an account and open the UI.
    ```  
 5. Download `client_secret.json` (⚠️ do not upload to GitHub).  
 6. Connect in n8n for Gmail node authentication.  
-
-📸 *[Insert screenshot of Google OAuth + Gmail node]*  
 
 ---
 
@@ -58,7 +65,7 @@ Create an account and open the UI.
 4. Import sample CSVs from `/datasets`.  
 5. Verify date formats and data types.  
 
-📸 *[Insert screenshot of Supabase schema + tables]*  
+
 
 ---
 
@@ -69,8 +76,6 @@ Workflow:
 - Node: Postgres → Insert Rows into `fact_orders_aggregate` and `fact_order_line`  
 
 ⚡ Handle date parsing with Luxon format (`dd-MM-yyyy`).  
-
-📸 *[Insert screenshot of full n8n workflow]*  
 
 ---
 
@@ -83,7 +88,7 @@ Workflow:
    - Generate **ExchangeRate** table (USD↔INR via Open Exchange Rates API).  
    - Merge fact + dim tables into a **fact_summary**.  
 
-📸 *[Insert screenshot of Quadratic connected to DB]*  
+
 
 ---
 
@@ -95,7 +100,7 @@ KPIs calculated:
 - **In-Full Delivery %**  
 - **OTIF % (On-Time In-Full)**  
 
-📸 *[Insert screenshot of KPIs in Quadratic]*  
+
 
 ---
 
@@ -106,7 +111,6 @@ With Quadratic prompts:
 - Calculate average delay for late deliveries.  
 - Estimate revenue loss from undelivered orders.  
 
-📸 *[Insert screenshot of analysis + charts]*  
 
 ---
 
